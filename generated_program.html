@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="aframe.min.js"></script>
+    <script src="oculus-thumbstick-controls.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="floor" src="medieval_blocks_05_diff_2k.jpg"></img>
+            <img id="floornorm" src="medieval_blocks_05_nor_gl_2k.jpg"></img>
+
+            <img id="grass" src="grass.jpg"></img>
+            <img id="grass_norm" src="grass_norm.jpg"></img>
+
+            <img id="brick" src="brick.png"></img>
+            <img id="brick_norm" src="brick_norm.png"></img>
+
+            <img id="plaster" src="plaster.png"></img>
+            <img id="plaster_norm" src="plaster_norm.png"></img>
+
+            <img id="wood" src="wood.jpg"></img>
+            <img id="wood-norm" src="wood_norm.png"></img>
+
+            <img id="sky" src="sky.jpg"></img>
+        </a-assets>
+        
+        
+        <a-plane src="#grass" shadow="cast: true" position="0 0 0" repeat="10000 10000" normal-map="#floor_norm" normal-texture-repeat="10000 10000" rotation="-90 0 0" scale="10000 10000 1"></a-plane>
+            <a-box id="wall" shadow="cast: true" src="#brick"
+              normal-map="#brick_norm" scale="10.0 3
+             1.1111111111111107"position="0.0 1.51 -11.444444444444445">
+            </a-box>
+            
+            <a-box id="wall" shadow="cast: true" src="#brick"
+              normal-map="#brick_norm" scale="1.1111111111111107 3
+             10.0"position="5.555555555555555 1.51 -7.0">
+            </a-box>
+            
+            <a-box id="wall" shadow="cast: true" src="#brick"
+              normal-map="#brick_norm" scale="1.1111111111111107 3
+             10.0"position="-5.555555555555555 1.51 -7.0">
+            </a-box>
+            
+            <a-box id="wall" shadow="cast: true" src="#brick"
+              normal-map="#brick_norm" scale="3.3333333333333335 3
+             1.1111111111111107"position="-3.333333333333333 1.51 -2.5555555555555554">
+            </a-box>
+            
+            <a-box id="wall" shadow="cast: true" src="#brick"
+              normal-map="#brick_norm" scale="3.333333333333333 3
+             1.1111111111111107"position="3.3333333333333335 1.51 -2.5555555555555554">
+            </a-box>
+            <a-sky src="#sky"></a-sky>
+
+        <a-entity light="type: ambient;
+                         intensity: 0.1">
+        </a-entity>
+
+        <a-entity id="rig" wasd-controls="acceleration:1">
+            <a-camera position="0 1.6 0"></a-camera>
+            <a-entity oculus-touch-controls="hand: left"></a-entity>
+            <a-entity oculus-touch-controls="hand: right" oculus-thumbstick-controls></a-entity>
+        </a-entity>
+
+        <a-light type="directional" color="#f29807" light="castShadow:true;" position="-.71 .71 -.41" intensity="0.5" shadow-camera-automatic="#wall"></a-light>
+          
+    </a-scene>
+    
+</body>

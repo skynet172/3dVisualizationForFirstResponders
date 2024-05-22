@@ -1,0 +1,17 @@
+<a-sky src="#sky"></a-sky>
+
+        <a-entity light="type: ambient;
+                         intensity: 0.1">
+        </a-entity>
+
+        <a-entity id="rig" wasd-controls="acceleration:1">
+            <a-camera position="0 1.6 0"></a-camera>
+            <a-entity oculus-touch-controls="hand: left"></a-entity>
+            <a-entity oculus-touch-controls="hand: right" oculus-thumbstick-controls></a-entity>
+        </a-entity>
+
+        <a-light type="directional" color="#f29807" light="castShadow:true;" position="-.71 .71 -.41" intensity="0.5" shadow-camera-automatic="#wall"></a-light>
+          
+    </a-scene>
+    
+</body>
