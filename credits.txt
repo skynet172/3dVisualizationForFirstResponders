@@ -1,0 +1,27 @@
+A-Frame
+VR framework based on three.js
+https://a-frame.io
+https://github.com/aframevr/aframe
+MIT license
+
+ELSED: Enhanced Line SEgment Drawing
+Detects line segments in an image
+https://github.com/iago-suarez/ELSED
+by Iago Suárez and José M. Buenaposada and Luis Baumela
+Apache-2.0 license
+
+oculus-thumbstick-controls
+scripts that allow for thumbstick controls
+https://github.com/gftruj/webzamples
+by Piotr Milewski
+MIT license
+
+Poliigon
+https://www.poliigon.com
+Free texture assets
+
+Poly Haven
+https://polyhaven.com/
+Free texture assets
+
+

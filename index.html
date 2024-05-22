@@ -32,7 +32,7 @@
         <a-plane src="#grass" shadow="cast: true" position="0 0 0" repeat="10000 10000" normal-map="#floor_norm" normal-texture-repeat="10000 10000" rotation="-90 0 0" scale="10000 10000 1"></a-plane>
         <a-box color="red" shadow="cast: true" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
         <a-box id="wall" shadow="cast: true" src="#brick" normal-map="#brick_norm"
-            position="0 0.1 -1">
+            position="0 .51 -1">
         </a-box>
 
         <a-sky src="#sky"></a-sky>
@@ -41,9 +41,9 @@
                          intensity: 0.1">
         </a-entity>
 
-        <a-entity id="rig">
+        <a-entity id="rig" wasd-controls="acceleration:1">
             <a-camera position="0 1.6 0"></a-camera>
-            <a-entity oculus-touch-controls="hand: left" ></a-entity>
+            <a-entity oculus-touch-controls="hand: left"></a-entity>
             <a-entity oculus-touch-controls="hand: right" oculus-thumbstick-controls></a-entity>
         </a-entity>
 
