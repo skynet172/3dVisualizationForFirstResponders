@@ -10,23 +10,17 @@
 <body>
     <a-scene>
         <a-assets>
-            <img id="floor" src="medieval_blocks_05_diff_2k.jpg"></img>
-            <img id="floornorm" src="medieval_blocks_05_nor_gl_2k.jpg"></img>
-
             <img id="grass" src="grass.jpg"></img>
             <img id="grass_norm" src="grass_norm.jpg"></img>
 
             <img id="brick" src="brick.png"></img>
             <img id="brick_norm" src="brick_norm.png"></img>
 
-            <img id="plaster" src="plaster.png"></img>
-            <img id="plaster_norm" src="plaster_norm.png"></img>
-
-            <img id="wood" src="wood.jpg"></img>
+            <img id="wood" src="wood_floor_diff_2k.jpg"></img>
             <img id="wood-norm" src="wood_norm.png"></img>
 
             <img id="sky" src="sky.jpg"></img>
         </a-assets>
         
         
-        <a-plane src="#grass" shadow="cast: true" position="0 0 0" repeat="10000 10000" normal-map="#floor_norm" normal-texture-repeat="10000 10000" rotation="-90 0 0" scale="10000 10000 1"></a-plane>
+        <a-plane src="#grass" shadow="cast: true" position="0 0 0" repeat="10000 10000" normal-map="#grass_norm" normal-texture-repeat="10000 10000" rotation="-90 0 0" scale="10000 10000 1"></a-plane>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="505" height="505" style="background-color: white;"></canvas>
+    <script>
+        const ctx = canvas.getContext("2d");
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "black";
+        const grid_dimen = 20;
+
+        let mouseX = 0;
+        let mouseY = 0;
+        let mouseDown = false;
+
+        ctx.fillStyle = "white";
+        ctx.fillRect(0,0,canvas.width, canvas.height);
+        ctx.fillStyle = "black";
+
+        function drawLine(x1, y1, x2, y2) {
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.stroke();
+        }
+
+        function fillCircle(x,y,r) {
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, Math.PI * 2, true);
+            ctx.fill();
+        }
+
+        for (let i=0; i<=grid_dimen; i++) {
+            let newX = i*(canvas.width-ctx.lineWidth)/grid_dimen + ctx.lineWidth/2;
+            drawLine(newX, 0, newX, canvas.height);
+        }
+
+        for (let i=0; i<=grid_dimen; i++) {
+            let newY = i*(canvas.height-ctx.lineWidth)/grid_dimen + ctx.lineWidth/2;
+            drawLine(0, newY, canvas.width, newY);
+        }
+
+        function main() {
+            if (mouseDown) {
+                fillCircle(mouseX, mouseY,(canvas.height-ctx.lineWidth)/(1.5*grid_dimen));
+            }
+        }
+        function mouseDownHandler(event) {
+            if (event.button == 0) {
+                mouseDown = true;
+            }
+        }
+        function mouseUpHandler(event) {
+            if (event.button == 0) {
+                mouseDown = false;
+            }
+        }
+        function mouseMoveHandler(event) {
+            mouseX = event.offsetX;
+            mouseY = event.offsetY;
+        }
+
+        setInterval(main, 40);
+        addEventListener("mousemove", mouseMoveHandler);
+        addEventListener("mousedown", mouseDownHandler);
+        addEventListener("mouseup",mouseUpHandler);
+
+    </script>
+</body>
+</html>
