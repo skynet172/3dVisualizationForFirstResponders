@@ -16,6 +16,11 @@ https://github.com/gftruj/webzamples
 by Piotr Milewski
 MIT license
 
+Learn A-Frame (WebVR)
+A-Frame tutorial series
+https://www.youtube.com/playlist?list=PL8MkBHej75fJD-HveDzm4xKrciC5VfYuV
+by Danilo Pasquariello 
+
 Poliigon
 https://www.poliigon.com
 Free texture assets
