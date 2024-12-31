@@ -1,12 +1,12 @@
 # 3d Visualization for First Responders
-Familiarity is key in order to respond quickly. In first responder scenarios, a 2d map does not convey all of the spacial information that a 3d interactive simulation would. This project aims at creating a more effective way for first response personnel to quickly absorb the new environment they are about to encounter using VR technology. The idea would be for them to enter the 'virtual space' before the real deal, ensuring preparation.
+Familiarity is key in order to respond quickly. In first responder scenarios, a 2d map does not convey all of the spatial information that a 3d interactive simulation would. This project aims to create a more effective way for first-response personnel to quickly absorb the new environment they are about to encounter using VR technology. The idea would be for them to enter the 'virtual space' before the real deal, ensuring preparation.
 >[!NOTE]
->This research project was made during a program at the Shenandoah Valley Computer Science Regional Partnership. Currently, it is in a prototype phase. Future improvements could enable compatability with multistory or industry standard floor plans.  
+>This research project was done during a program run by the Shenandoah Valley Computer Science Regional Partnership. Currently, it is in the prototype phase. Future improvements could enable compatibility with multistory or industry-standard floor plans, and many more features.
 
 ## Overview
 + A 2d floor plan (in a grid format) is provided to [gen.py](gen.py).
 + The script generates an HTML file containing an interactive web app.
-  + Its contents are [pre.txt](pre.txt) + walls of floor plan + [post.txt](post.txt) 
+  + Its contents are [pre.txt](pre.txt) + walls of floor plan + [post.txt](post.txt).
 + The user can explore the 3d building in a MetaQuest VR headset, or another environment that supports WebXR (such as a browser).
   
   ![An image showing a floor plan sketch changing into a neater virtual representation, and then into a 3d environment.](programPipeline.png)
@@ -25,7 +25,7 @@ Familiarity is key in order to respond quickly. In first responder scenarios, a 
    + Here is an example:
    
    ![A grid containing the walls of drawn floor plan](sketch1.png)
-4. Run `python3 gen.py` or your platform's equivalent. Enter the file name of the image (file extension too). Here's a peak into what the program does:
+4. Run `python3 gen.py` or your platform's equivalent. Enter the file name of the image (file extension too). Here's a peek into what the program does:
    + Grid cells over a certain threshold are 'filled in' and stored in an array. Visualization:
      ![A neater grid containing the same walls of the drawn floor plan](sketch1Filter.png)
    +  Then, the script generates the HTML file for the web app:
@@ -42,7 +42,7 @@ Familiarity is key in order to respond quickly. In first responder scenarios, a 
         </a-box>
         (...)
         ```
-5. Open the HTML file in a web browser. Click and drag to look around and WASD to move.
+5. Open the HTML file in a web browser. Click and drag to look around. Use WASD to move.
    + To run it on a MetaQuest headset, put the program on a website, then navigate to it with the headset's browser. Enter immersive mode, and then you can see the environment as if it were in real life! Use the joystick to move.
     ![A picture of the floor plan in 3d](sketch1real.png)
    + All done!
@@ -55,7 +55,7 @@ VR framework based on three.js
 MIT license  
 
 **oculus-thumbstick-controls**  
-Script and block of code that allows for thumbstick controls  
+Script and block of code that allows for thumbstick controls
 [https://github.com/gftruj/webzamples/tree/master/aframe/controls ](https://github.com/gftruj/webzamples/tree/master/aframe/controls )  
 by Piotr Milewski  
 MIT license  
