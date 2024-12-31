@@ -21,12 +21,12 @@ Familiarity is key in order to respond quickly. In first responder scenarios, a 
 >Ensure that you have NumPy and OpenCV, as they are dependencies.
 1. Use `git clone https://github.com/skynet172/3d` to clone the repo.
 2. Use `cd 3d` to change into the project directory.
-3. Open [drawing.html](drawing.html) in a web browser. Draw a floor plan and save the image (`Right-Click` then `Save-Image`) in the project directory.
+3. Open [drawing.html](drawing.html) ([demo](https://skynet172.github.io/3d/drawing.html)) in a web browser. Draw a floor plan and save the image (`Right-Click` then `Save-Image`) in the project directory.
    + Here is an example:
    
    ![A grid containing the walls of drawn floor plan](sketch1.png)
 4. Run `python3 gen.py` or your platform's equivalent. Enter the file name of the image (file extension too). Here's a peek into what the program does:
-   + Grid cells over a certain threshold are 'filled in' and stored in an array. Visualization:
+   + Grid cells >= a 75% threshold are 'filled in' and stored in an array. Visualization:
      ![A neater grid containing the same walls of the drawn floor plan](sketch1Filter.png)
    +  Then, the script generates the HTML file for the web app:
        ```
