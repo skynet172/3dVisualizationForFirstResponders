@@ -56,7 +56,7 @@ MIT license
 
 **oculus-thumbstick-controls**  
 Scripts that allow for thumbstick controls  
-[https://github.com/gftruj/webzamples](https://github.com/gftruj/webzamples)  
+[https://github.com/gftruj/webzamples/tree/master/aframe/controls ](https://github.com/gftruj/webzamples/tree/master/aframe/controls )  
 by Piotr Milewski  
 MIT license  
 
