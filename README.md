@@ -55,7 +55,7 @@ VR framework based on three.js
 MIT license  
 
 **oculus-thumbstick-controls**  
-Scripts that allow for thumbstick controls  
+Script and block of code that allows for thumbstick controls  
 [https://github.com/gftruj/webzamples/tree/master/aframe/controls ](https://github.com/gftruj/webzamples/tree/master/aframe/controls )  
 by Piotr Milewski  
 MIT license  
