@@ -12,7 +12,7 @@ Familiarity is key in order to respond quickly. In first responder scenarios, a 
   ![An image showing a floor plan sketch changing into a neater virtual representation, and then into a 3d environment.](programPipeline.png)
 
 ## Demo
-+ View an example 3d floor plan environment: [https://skynet172.github.io/3d/sketch1.html](https://skynet172.github.io/3d/sketch1.html)
++ View an example 3d floor plan environment: [https://skynet172.github.io/3dVisualizationForFirstResponders/sketch1.html](https://skynet172.github.io/3dVisualizationForFirstResponders/sketch1.html)
 + WASD to move, Click and drag to look around
 + Try refreshing the page or waiting a bit if it doesn't work. Use Chrome, Firefox or Edge for best results.
 
@@ -21,7 +21,7 @@ Familiarity is key in order to respond quickly. In first responder scenarios, a 
 >Ensure that you have NumPy and OpenCV, as they are dependencies.
 1. Use `git clone https://github.com/skynet172/3d` to clone the repo.
 2. Use `cd 3d` to change into the project directory.
-3. Open [drawing.html](drawing.html) ([demo](https://skynet172.github.io/3d/drawing.html)) in a web browser. Draw a floor plan and save the image (`Right-Click` then `Save-Image`) in the project directory.
+3. Open [drawing.html](drawing.html) ([demo](https://skynet172.github.io/3dVisualizationForFirstResponders/drawing.html)) in a web browser. Draw a floor plan and save the image (`Right-Click` then `Save-Image`) in the project directory.
    + Here is an example:
    
    ![A grid containing the walls of drawn floor plan](sketch1.png)
