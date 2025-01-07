@@ -19,7 +19,7 @@ Familiarity is key in order to respond quickly. In first responder scenarios, a 
 ## Running Locally
 >[!IMPORTANT]
 >Ensure that you have NumPy and OpenCV, as they are dependencies.
-1. Use `git clone https://github.com/skynet172/3d` to clone the repo.
+1. Use `git clone https://github.com/skynet172/3dVisualizationForFirstResponders` to clone the repo.
 2. Use `cd 3d` to change into the project directory.
 3. Open [drawing.html](drawing.html) ([demo](https://skynet172.github.io/3dVisualizationForFirstResponders/drawing.html)) in a web browser. Draw a floor plan and save the image (`Right-Click` then `Save-Image`) in the project directory.
    + Here is an example:

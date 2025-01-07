@@ -4,6 +4,7 @@
                          intensity: 0.1">
         </a-entity>
 
+        <!-- Code block from oculus-thumbstick-controls -->
         <a-entity id="rig" wasd-controls="acceleration:1">
             <a-camera position="0 1.6 0"></a-camera>
             <a-entity oculus-touch-controls="hand: left"></a-entity>
